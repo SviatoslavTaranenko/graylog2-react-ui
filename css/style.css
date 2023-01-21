@@ -1,37 +1,55 @@
 body {
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(224, 224, 224);
 }
 
 
-.table .all_container {
+.container .all_container {
     background-color: white;
     margin: 3px;
     border-radius: 4px;
     max-width: 100%;
+    height: 500px;
+    
 }
 
 
-.table .all_container img {
-    width: 12px;
-    height: 12px;
+.container .all_container img {
+    width: 13px;
+    height: 13px;
 }
 
-.table .all_container .table_header {
+
+
+.container .all_container .table_header {
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     justify-content: space-between;
-    margin: 0 5px 0 7px;
+    padding: 0 3px 0 11px;
     min-height: 25px;
     align-items: center;
 }
 
-table {
-    margin: 0 3px 0 5px;
+.container .all_container .table_header img {
+    padding-right: 5px;
 }
 
-.thead {
+.container .all_container .table {
+    height: 475px;
+    overflow: auto;
+}
+
+
+.container .all_container .table .table_all {
     display: table;
-    background-color: rgb(218, 218, 218);
+    width: 100%;
+    padding: 0 0 0 7px;
+}
+
+
+.container .all_container .table .table_all .thead {
+    display: table;
+    background-color: rgb(224, 224, 224);
+    width: 100%;
 }
 
 .thead img {
@@ -41,217 +59,434 @@ table {
 
 .thead .timespamp {
     font-weight: 100;
-    min-width: 570px;
+    width: 43%;
     text-align: left;
 }
 
 .thead .facility {
     font-weight: 100;
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .thead .level {
     font-weight: 100;
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .thead .program {
     font-weight: 100;
-    min-width: 245px;
+    width: 21%;
     text-align: left;
 }
 
-.tbody {
+.container .all_container .table .table_all .tbody {
     display: table;
+    width: 100%;
 }
 
 .tbody .tbody_timespamp_1 {
-    min-width: 570px;
+    width: 43%;
     text-align: left;
     font-weight: 700;
 }
 
 .tbody .tbody_facility_1 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_level_1 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_program_1 {
-    min-width: 240px;
+    width: 21%;
     text-align: left;
 }
 
 .tbody .tbody_all_list_1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: blue;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .tbody .tbody_timespamp_2 {
-    min-width: 570px;
+    width: 43%;
     text-align: left;
     font-weight: 700;
 }
 
 .tbody .tbody_facility_2 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_level_2 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_program_2 {
-    min-width: 240px;
+    width: 21%;
     text-align: left;
 }
 
 .tbody .tbody_all_list_2 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;    
     color: blue;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .tbody .tbody_timespamp_3 {
-    min-width: 570px;
+    width: 43%;
     text-align: left;
     font-weight: 700;
 }
 
 .tbody .tbody_facility_3 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_level_3 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_program_3 {
-    min-width: 240px;
+    width: 21%;
     text-align: left;
 }
 
 .tbody .tbody_all_list_3 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: blue;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .tbody .tbody_timespamp_4 {
-    min-width: 570px;
+    width: 43%;
     text-align: left;
     font-weight: 700;
 }
 
 .tbody .tbody_facility_4 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_level_4 {
-    min-width: 250px;
+    width: 18%;;
     text-align: left;
 }
 
 .tbody .tbody_program_4 {
-    min-width: 240px;
+    width: 21%;
     text-align: left;
 }
 
 .tbody .tbody_all_list_4 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: blue;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .tbody .tbody_timespamp_5 {
-    min-width: 570px;
+    width: 43%;
     text-align: left;
     font-weight: 700;
 }
 
 .tbody .tbody_facility_5 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_level_5 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_program_5 {
-    min-width: 240px;
+    width: 21%;
     text-align: left;
 }
 
 .tbody .tbody_all_list_5 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: blue;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .tbody .tbody_timespamp_6 {
-    min-width: 570px;
+    width: 43%;
     text-align: left;
     font-weight: 700;
 }
 
 .tbody .tbody_facility_6 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_level_6 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_program_6 {
-    min-width: 240px;
+    width: 21%;
     text-align: left;
 }
 
 .tbody .tbody_all_list_6 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: blue;
     border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .tbody .tbody_timespamp_7 {
-    min-width: 570px;
+    width: 43%;
     text-align: left;
     font-weight: 700;
 }
 
 .tbody .tbody_facility_7 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_level_7 {
-    min-width: 250px;
+    width: 18%;
     text-align: left;
 }
 
 .tbody .tbody_program_7 {
-    min-width: 240px;
+    width: 21%;
     text-align: left;
 }
 
 .tbody .tbody_all_list_7 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_8 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_8 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_8 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_8 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_8 {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_9 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_9 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_9 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_9 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_9 {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_10 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_10 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_10 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_10 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_10 {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_11 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_11 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_11 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_11 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_11 {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_12 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_12 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_12 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_12 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_12 {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_13 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_13 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_13 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_13 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_13 {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_14 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_14 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_14 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_14 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_14 {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.tbody .tbody_timespamp_15 {
+    width: 43%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.tbody .tbody_facility_15 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_level_15 {
+    width: 18%;
+    text-align: left;
+}
+
+.tbody .tbody_program_15 {
+    width: 21%;
+    text-align: left;
+}
+
+.tbody .tbody_all_list_15 {
+    font-family: 'Open Sans', sans-serif;
     color: blue;
     border-bottom: 1px solid rgb(218, 218, 218);
 }

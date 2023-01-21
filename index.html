@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>graylog2-react-ui</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <container class="table">
+    <container class="container">
         <div class="all_container">
             <div class="table_header">
                 <div class="messages">
@@ -22,81 +23,155 @@
                     <img src="img/chevron-down.svg" alt="dovn">
                 </div>
             </div>
-            <table>
-                <thead class="thead">
-                    <tr>
-                        <th class="timespamp">timespamp<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
-                        <th class="facility">facility<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
-                        <th class="level">level<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
-                        <th class="program">program<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
-                   </tr>
-                </thead>
-                <tbody class="tbody">
-                    <tr>
-                        <td class="tbody_timespamp_1">2023-01-01 08:10:15 +02:00</td>
-                        <td class="tbody_facility_1">user-level</td>
-                        <td class="tbody_level_1">5</td>
-                        <td class="tbody_program_1">target</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="tbody_all_list_1">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
-                    </tr>
-                    <tr>
-                        <td class="tbody_timespamp_2">2023-01-01 08:08:36 +02:00</td>
-                        <td class="tbody_facility_2">user-level</td>
-                        <td class="tbody_level_2">5</td>
-                        <td class="tbody_program_2">target</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="tbody_all_list_2">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
-                    </tr>
-                    <tr>
-                        <td class="tbody_timespamp_3">2023-01-01 08:06:48 +02:00</td>
-                        <td class="tbody_facility_3">user-level</td>
-                        <td class="tbody_level_3">5</td>
-                        <td class="tbody_program_3">target</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="tbody_all_list_3">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
-                    </tr>
-                    <tr>
-                        <td class="tbody_timespamp_4">2023-01-01 08:06:02 +02:00</td>
-                        <td class="tbody_facility_4">user-level</td>
-                        <td class="tbody_level_4">5</td>
-                        <td class="tbody_program_4">target</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="tbody_all_list_4">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
-                    </tr>
-                    <tr>
-                        <td class="tbody_timespamp_5">2023-01-01 08:05:47 +02:00</td>
-                        <td class="tbody_facility_5">user-level</td>
-                        <td class="tbody_level_5">5</td>
-                        <td class="tbody_program_5">target</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="tbody_all_list_5">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
-                    </tr>
-                    <tr>
-                        <td class="tbody_timespamp_6">2023-01-01 08:03:13 +02:00</td>
-                        <td class="tbody_facility_6">user-level</td>
-                        <td class="tbody_level_6">5</td>
-                        <td class="tbody_program_6">target</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="tbody_all_list_6">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
-                    </tr>
-                    <tr>
-                        <td class="tbody_timespamp_7">2023-01-01 08:01:23 +02:00</td>
-                        <td class="tbody_facility_7">user-level</td>
-                        <td class="tbody_level_7">5</td>
-                        <td class="tbody_program_7">target</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4" class="tbody_all_list_7">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table">
+                <table class="table_all">
+                    <thead class="thead">
+                        <tr>
+                            <th class="timespamp">timespamp<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
+                            <th class="facility">facility<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
+                            <th class="level">level<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
+                            <th class="program">program<img src="img/free-icon-font-sort-amount-up-alt-7434900.svg" alt="up"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="tbody_timespamp_1">2023-01-01 08:10:15 +02:00</td>
+                            <td class="tbody_facility_1">user-level</td>
+                            <td class="tbody_level_1">5</td>
+                            <td class="tbody_program_1">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_1">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_2">2023-01-01 08:08:36 +02:00</td>
+                            <td class="tbody_facility_2">user-level</td>
+                            <td class="tbody_level_2">5</td>
+                            <td class="tbody_program_2">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_2">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_3">2023-01-01 08:06:48 +02:00</td>
+                            <td class="tbody_facility_3">user-level</td>
+                            <td class="tbody_level_3">5</td>
+                            <td class="tbody_program_3">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_3">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_4">2023-01-01 08:06:02 +02:00</td>
+                            <td class="tbody_facility_4">user-level</td>
+                            <td class="tbody_level_4">5</td>
+                            <td class="tbody_program_4">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_4">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_5">2023-01-01 08:05:47 +02:00</td>
+                            <td class="tbody_facility_5">user-level</td>
+                            <td class="tbody_level_5">5</td>
+                            <td class="tbody_program_5">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_5">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_6">2023-01-01 08:03:13 +02:00</td>
+                            <td class="tbody_facility_6">user-level</td>
+                            <td class="tbody_level_6">5</td>
+                            <td class="tbody_program_6">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_6">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_7">2023-01-01 08:01:23 +02:00</td>
+                            <td class="tbody_facility_7">user-level</td>
+                            <td class="tbody_level_7">5</td>
+                            <td class="tbody_program_7">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_7">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_8">2023-01-01 08:00:51 +02:00</td>
+                            <td class="tbody_facility_8">user-level</td>
+                            <td class="tbody_level_8">5</td>
+                            <td class="tbody_program_8">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_8">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_9">2023-01-01 07:59:52 +02:00</td>
+                            <td class="tbody_facility_9">user-level</td>
+                            <td class="tbody_level_9">5</td>
+                            <td class="tbody_program_9">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_9">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_10">2023-01-01 07:52:14 +02:00</td>
+                            <td class="tbody_facility_10">user-level</td>
+                            <td class="tbody_level_10">5</td>
+                            <td class="tbody_program_10">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_10">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_11">2023-01-01 07:50:23 +02:00</td>
+                            <td class="tbody_facility_11">user-level</td>
+                            <td class="tbody_level_11">5</td>
+                            <td class="tbody_program_11">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_11">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_12">2023-01-01 07:49:48 +02:00</td>
+                            <td class="tbody_facility_12">user-level</td>
+                            <td class="tbody_level_12">5</td>
+                            <td class="tbody_program_12">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_12">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_13">2023-01-01 07:49:14 +02:00</td>
+                            <td class="tbody_facility_13">user-level</td>
+                            <td class="tbody_level_13">5</td>
+                            <td class="tbody_program_13">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_13">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_14">2023-01-01 07:48:41 +02:00</td>
+                            <td class="tbody_facility_14">user-level</td>
+                            <td class="tbody_level_14">5</td>
+                            <td class="tbody_program_14">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_14">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                        <tr>
+                            <td class="tbody_timespamp_15">2023-01-01 07:45:23 +02:00</td>
+                            <td class="tbody_facility_15">user-level</td>
+                            <td class="tbody_level_15">5</td>
+                            <td class="tbody_program_15">target</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="tbody_all_list_15">"139963890829056 INFO [activationValidator, 368] Leave Validate. Succeeded for integrity.VcIntegrity.retrieveHostIPAddresses on target: Integrity.VcIntegrity"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </container>
 </body>
