@@ -13,6 +13,9 @@ body {
     
 }
 
+.container {
+    color: rgb(31, 31, 31);
+}
 
 .container .all_container img {
     width: 13px;
@@ -22,17 +25,124 @@ body {
 
 .container .all_container .table_header {
     display: flex;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: rgb(31, 31,31);
-    font-size: 1.125rem;
     justify-content: space-between;
+    align-items: center;
     padding: 0 11px 0 11px;
     min-height: 25px;
+    
+}
+
+.container .all_container .table_header .messages {
+    display: flex;
+    align-content:center;
     align-items: center;
 }
 
-.container .all_container .table_header img {
-    padding-right: 5px;
+.container .all_container .table_header .messages .all_massages {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(31, 31,31);
+    font-size: 1.125rem;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.container .all_container .table_header .messages .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+}
+
+.container .all_container .table_header .messages .menu:hover{
+    cursor: move;
+    background-color: rgb(215, 215, 215);
+}
+
+.container .all_container .table_header .messages .menu .menu_img {
+    display: flex;
+    justify-content: center;
+}
+
+.container .all_container .table_header .icon_header {
+    display: flex;
+}
+
+.container .all_container .table_header .icon_header .reduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.container .all_container .table_header .icon_header .reduce:hover{
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
+
+.container .all_container .table_header .icon_header .reduce .reduce_img {
+    display: flex;
+    justify-content: center;
+}
+
+
+.container .all_container .table_header .icon_header .fullscrene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.container .all_container .table_header .icon_header .fullscrene:hover{
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
+
+.container .all_container .table_header .icon_header .fullscrene .fullscrene_img {
+    display: flex;
+    justify-content: center;
+}
+
+.container .all_container .table_header .icon_header .edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.container .all_container .table_header .icon_header .edit:hover{
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
+
+.container .all_container .table_header .icon_header .edit .edit_img {
+    display: flex;
+    justify-content: center;
+}
+
+.container .all_container .table_header .icon_header .down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.container .all_container .table_header .icon_header .down:hover{
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
+
+.container .all_container .table_header .icon_header .down .down_img {
+    display: flex;
+    justify-content: center;
 }
 
 .container .all_container .table {
@@ -56,6 +166,16 @@ body {
     font-size: 0.889rem;
     color: rgb(31, 31, 31);
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid rgb(128, 128, 128)
+}
+
+.container .all_container .table .table_all .thead img:hover{
+    cursor: pointer;
+}
+
+.container .all_container .table .table_all .thead span:hover{
+    cursor: pointer;
+    font-weight: 400;
 }
 
 .thead img {
