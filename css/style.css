@@ -185,11 +185,14 @@ path {
 }
 
 .thead .timespamp {
-    font-weight: 100;
+    font-weight: 400;
     width: 43%;
     text-align: left;
 }
 
+.thead .timespamp path {
+    fill: black;
+}
 
 .timespamp div {
     display: inline-block;
@@ -197,7 +200,6 @@ path {
 
 .timespamp div:hover{
     cursor: pointer;
-    font-weight: 700;
 }
 
 .thead span {
@@ -216,7 +218,6 @@ path {
 
 .facility div:hover{
     cursor: pointer;
-    font-weight: 700;
 }
 
 .thead .level {
@@ -231,7 +232,6 @@ path {
 
 .level div:hover{
     cursor: pointer;
-    font-weight: 700;
 }
 
 .thead .program {
@@ -246,7 +246,6 @@ path {
 
 .program div:hover{
     cursor: pointer;
-    font-weight: 700;
 }
 
 .container .all_container .table .table_all .tbody {
