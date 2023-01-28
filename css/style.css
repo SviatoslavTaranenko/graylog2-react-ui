@@ -17,9 +17,10 @@ body {
     color: rgb(31, 31, 31);
 }
 
-.container .all_container img {
-    width: 13px;
-    height: 13px;
+.table_header svg {
+    width: 14px;
+    height: 14px;
+    align-content: center;
 }
 
 
@@ -59,10 +60,12 @@ body {
     background-color: rgb(215, 215, 215);
 }
 
-.container .all_container .table_header .messages .menu .menu_img {
+.container .all_container .table_header .messages .menu svg {
     display: flex;
     justify-content: center;
-}
+}    
+
+
 
 .container .all_container .table_header .icon_header {
     display: flex;
@@ -169,24 +172,27 @@ body {
     border-bottom: 1px solid rgb(128, 128, 128)
 }
 
-.container .all_container .table .table_all .thead img:hover{
-    cursor: pointer;
+.thead svg{
+    width: 12px;
+    height: 12px;
 }
-
-.container .all_container .table .table_all .thead span:hover{
-    cursor: pointer;
-    font-weight: 400;
-}
-
-.thead img {
-    margin-left: 15px;
-}
-
 
 .thead .timespamp {
-    font-weight: 100;
+    font-weight: 400;
     width: 43%;
     text-align: left;
+}
+
+.timespamp div {
+    display: inline-block;
+}
+
+.timespamp div:hover{
+    cursor: pointer;
+}
+
+.thead span {
+    margin-right: 15px;
 }
 
 .thead .facility {
@@ -195,16 +201,40 @@ body {
     text-align: left;
 }
 
+.facility div {
+    display: inline-block;
+}
+
+.facility div:hover{
+    cursor: pointer;
+}
+
 .thead .level {
     font-weight: 100;
     width: 18%;
     text-align: left;
 }
 
+.level div {
+    display: inline-block;
+}
+
+.level div:hover{
+    cursor: pointer;
+}
+
 .thead .program {
     font-weight: 100;
     width: 21%;
     text-align: left;
+}
+
+.program div {
+    display: inline-block;
+}
+
+.program div:hover{
+    cursor: pointer;
 }
 
 .container .all_container .table .table_all .tbody {
