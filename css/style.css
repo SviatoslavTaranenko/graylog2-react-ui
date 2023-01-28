@@ -2,6 +2,9 @@ body {
     background-color: rgb(232, 232, 232);
 }
 
+svg {
+    fill: rgb(128, 128, 128);
+}
 
 .container .all_container {
     background-color: white;
@@ -177,11 +180,16 @@ body {
     height: 12px;
 }
 
+path {
+    fill: rgb(128, 128, 128);
+}
+
 .thead .timespamp {
-    font-weight: 400;
+    font-weight: 100;
     width: 43%;
     text-align: left;
 }
+
 
 .timespamp div {
     display: inline-block;
@@ -189,6 +197,7 @@ body {
 
 .timespamp div:hover{
     cursor: pointer;
+    font-weight: 700;
 }
 
 .thead span {
@@ -207,6 +216,7 @@ body {
 
 .facility div:hover{
     cursor: pointer;
+    font-weight: 700;
 }
 
 .thead .level {
@@ -221,6 +231,7 @@ body {
 
 .level div:hover{
     cursor: pointer;
+    font-weight: 700;
 }
 
 .thead .program {
@@ -235,6 +246,7 @@ body {
 
 .program div:hover{
     cursor: pointer;
+    font-weight: 700;
 }
 
 .container .all_container .table .table_all .tbody {
