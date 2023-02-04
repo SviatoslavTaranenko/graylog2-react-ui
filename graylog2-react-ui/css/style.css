@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(232, 232, 232);
+}
+
+.container {
+    color: rgb(31, 31, 31);
+}
+
+.container .widget {
+    background-color: white;
+    border: 1px solid rgb(208, 208, 208);
+    margin: 3px;
+    border-radius: 4px;
+    max-width: 100%;
+    height: 500px;
+}
+
+
+.widget_header svg {
+    width: 14px;
+    height: 14px;
+    align-content: center;
+}
+
+
+.container .widget .widget_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11px 0 3px;
+    min-height: 25px;
+    fill: rgb(128, 128, 128);
+}
+
+.container .widget .widget_header path {
+    fill: rgb(128, 128, 128);
+}
+
+.container .widget .widget_header .widget_header_left {
+    display: flex;
+    align-content:center;
+    align-items: center;
+}
+
+.container .widget .widget_header .widget_header_left .widget_header_text {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(31, 31,31);
+    font-size: 1.125rem;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.container .widget .widget_header .widget_header_right {
+    display: flex;
+}
+
+.container .widget .widget_header .widget_header_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.container .widget .widget_header .widget_header_icon_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+}
+
+.container .widget .widget_header .widget_header_icon_menu:hover{
+    cursor: move;
+    background-color: rgb(215, 215, 215);
+}
+
+.container .widget .widget_header .widget_header_icon:hover{
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
+
+
+
+
+
+.container .widget .widget_table {
+    height: 470px;
+    overflow: auto;
+    margin-right: 12px;
+    margin-left: 9px;
+}
+
+
+.container .widget .widget_table .widget_table_all {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0 0 0 7px;
+}
+
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead {
+    background-color: rgb(230, 230, 230);
+    font-size: 0.889rem;
+    color: rgb(31, 31, 31);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.container .widget .widget_table svg{
+    width: 12px;
+    height: 12px;
+}
+
+.container .widget .widget_table path {
+    fill: rgb(128, 128, 128);
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp {
+    font-weight: 400;
+    width: 43%;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp path {
+    fill: black;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp div {
+    display: inline-block;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp div:hover{
+    cursor: pointer;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead span {
+    margin-right: 15px;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title {
+    font-weight: 100;
+    text-align: left;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title div {
+    display: inline-block;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title div:hover{
+    cursor: pointer;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_list_timespamp {
+    width: 43%;
+    text-align: left;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_list {
+    text-align: left;
+    font-size: 0.889rem;
+    color: rgb(31, 31, 31);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_sublist {
+    font-size: 0.889rem;
+    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: rgb(0, 87, 168);
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
