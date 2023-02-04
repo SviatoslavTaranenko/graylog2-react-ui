@@ -2,47 +2,47 @@ body {
     background-color: rgb(232, 232, 232);
 }
 
-svg {
-    fill: rgb(128, 128, 128);
+.container {
+    color: rgb(31, 31, 31);
 }
 
-.container .all_container {
+.container .widget {
     background-color: white;
     border: 1px solid rgb(208, 208, 208);
     margin: 3px;
     border-radius: 4px;
     max-width: 100%;
     height: 500px;
-    
 }
 
-.container {
-    color: rgb(31, 31, 31);
-}
 
-.table_header svg {
+.widget_header svg {
     width: 14px;
     height: 14px;
     align-content: center;
 }
 
 
-.container .all_container .table_header {
+.container .widget .widget_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 11px 0 11px;
+    padding: 0 11px 0 3px;
     min-height: 25px;
-    
+    fill: rgb(128, 128, 128);
 }
 
-.container .all_container .table_header .messages {
+.container .widget .widget_header path {
+    fill: rgb(128, 128, 128);
+}
+
+.container .widget .widget_header .widget_header_left {
     display: flex;
     align-content:center;
     align-items: center;
 }
 
-.container .all_container .table_header .messages .all_massages {
+.container .widget .widget_header .widget_header_left .widget_header_text {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(31, 31,31);
     font-size: 1.125rem;
@@ -50,7 +50,20 @@ svg {
     margin-left: 5px;
 }
 
-.container .all_container .table_header .messages .menu {
+.container .widget .widget_header .widget_header_right {
+    display: flex;
+}
+
+.container .widget .widget_header .widget_header_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.container .widget .widget_header .widget_header_icon_menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,202 +71,90 @@ svg {
     height: 19px;
 }
 
-.container .all_container .table_header .messages .menu:hover{
+.container .widget .widget_header .widget_header_icon_menu:hover{
     cursor: move;
     background-color: rgb(215, 215, 215);
 }
 
-.container .all_container .table_header .messages .menu svg {
-    display: flex;
-    justify-content: center;
-}    
-
-
-
-.container .all_container .table_header .icon_header {
-    display: flex;
-}
-
-.container .all_container .table_header .icon_header .reduce {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 19px;
-    height: 19px;
-    margin-right: 5px;
-}
-
-.container .all_container .table_header .icon_header .reduce:hover{
+.container .widget .widget_header .widget_header_icon:hover{
     cursor: pointer;
     background-color: rgb(215, 215, 215);
 }
 
-.container .all_container .table_header .icon_header .reduce .reduce_img {
-    display: flex;
-    justify-content: center;
-}
 
 
-.container .all_container .table_header .icon_header .fullscrene {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 19px;
-    height: 19px;
-    margin-right: 5px;
-}
 
-.container .all_container .table_header .icon_header .fullscrene:hover{
-    cursor: pointer;
-    background-color: rgb(215, 215, 215);
-}
 
-.container .all_container .table_header .icon_header .fullscrene .fullscrene_img {
-    display: flex;
-    justify-content: center;
-}
-
-.container .all_container .table_header .icon_header .edit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 19px;
-    height: 19px;
-    margin-right: 5px;
-}
-
-.container .all_container .table_header .icon_header .edit:hover{
-    cursor: pointer;
-    background-color: rgb(215, 215, 215);
-}
-
-.container .all_container .table_header .icon_header .edit .edit_img {
-    display: flex;
-    justify-content: center;
-}
-
-.container .all_container .table_header .icon_header .down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 19px;
-    height: 19px;
-    margin-right: 5px;
-}
-
-.container .all_container .table_header .icon_header .down:hover{
-    cursor: pointer;
-    background-color: rgb(215, 215, 215);
-}
-
-.container .all_container .table_header .icon_header .down .down_img {
-    display: flex;
-    justify-content: center;
-}
-
-.container .all_container .table {
+.container .widget .widget_table {
     height: 470px;
     overflow: auto;
     margin-right: 12px;
+    margin-left: 9px;
 }
 
 
-.container .all_container .table .table_all {
+.container .widget .widget_table .widget_table_all {
     display: table;
+    border-collapse: collapse;
     width: 100%;
     padding: 0 0 0 7px;
 }
 
 
-.container .all_container .table .table_all .thead {
-    display: table;
+.container .widget .widget_table .widget_table_all .widget_table_all_thead {
     background-color: rgb(230, 230, 230);
-    width: 100%;
     font-size: 0.889rem;
     color: rgb(31, 31, 31);
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border-bottom: 1px solid rgb(128, 128, 128)
+    border-bottom: 1px solid rgb(128, 128, 128);
 }
 
-.thead svg{
+.container .widget .widget_table svg{
     width: 12px;
     height: 12px;
 }
 
-path {
+.container .widget .widget_table path {
     fill: rgb(128, 128, 128);
 }
 
-.thead .timespamp {
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp {
     font-weight: 400;
     width: 43%;
     text-align: left;
+    padding-left: 5px;
 }
 
-.thead .timespamp path {
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp path {
     fill: black;
 }
 
-.timespamp div {
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp div {
     display: inline-block;
 }
 
-.timespamp div:hover{
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp div:hover{
     cursor: pointer;
 }
 
-.thead span {
+.container .widget .widget_table .widget_table_all .widget_table_all_thead span {
     margin-right: 15px;
 }
 
-.thead .facility {
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title {
     font-weight: 100;
-    width: 18%;
     text-align: left;
 }
 
-.facility div {
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title div {
     display: inline-block;
 }
 
-.facility div:hover{
+.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title div:hover{
     cursor: pointer;
 }
 
-.thead .level {
-    font-weight: 100;
-    width: 18%;
-    text-align: left;
-}
-
-.level div {
-    display: inline-block;
-}
-
-.level div:hover{
-    cursor: pointer;
-}
-
-.thead .program {
-    font-weight: 100;
-    width: 21%;
-    text-align: left;
-}
-
-.program div {
-    display: inline-block;
-}
-
-.program div:hover{
-    cursor: pointer;
-}
-
-.container .all_container .table .table_all .tbody {
-    display: table;
-    width: 100%;
-}
-
-.tbody .tbody_timespamp_1 {
+.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_list_timespamp {
     width: 43%;
     text-align: left;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -261,577 +162,14 @@ path {
     font-weight: bold;
 }
 
-.tbody .tbody_facility_1 {
-    width: 18%;
+.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_list {
     text-align: left;
     font-size: 0.889rem;
     color: rgb(31, 31, 31);
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.tbody .tbody_level_1 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_1 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_1 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_2 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_2 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_2 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_2 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_2 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_3 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_3 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_3 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_3 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_3 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_4 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_4 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_4 {
-    width: 18%;;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_4 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_4 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_5 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_5 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_5 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_5 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_5 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_6 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_6 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_6 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_6 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_6 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_7 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_7 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_7 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_7 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_7 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_8 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_8 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_8 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_8 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_8 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_9 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_9 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_9 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_9 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_9 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_10 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_10 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_10 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_10 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_10 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_11 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_11 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_11 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_11 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_11 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_12 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_12 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_12 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_12 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_12 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_13 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_13 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_13 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_13 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_13 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_14 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_14 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_14 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_14 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_14 {
-    font-size: 0.889rem;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    color: rgb(0, 87, 168);
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-.tbody .tbody_timespamp_15 {
-    width: 43%;
-    text-align: left;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.tbody .tbody_facility_15 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_level_15 {
-    width: 18%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_program_15 {
-    width: 21%;
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.tbody .tbody_all_list_15 {
+.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_sublist {
     font-size: 0.889rem;
     font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
     color: rgb(0, 87, 168);
