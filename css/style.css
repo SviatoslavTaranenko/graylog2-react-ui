@@ -15,15 +15,13 @@ body {
     height: 500px;
 }
 
-
-.widget_header svg {
+.widget__header svg {
     width: 14px;
     height: 14px;
     align-content: center;
 }
 
-
-.container .widget .widget_header {
+.container .widget .widget__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,17 +30,17 @@ body {
     fill: rgb(128, 128, 128);
 }
 
-.container .widget .widget_header path {
+.widget__header path {
     fill: rgb(128, 128, 128);
 }
 
-.container .widget .widget_header .widget_header_left {
+.widget__header .header__left {
     display: flex;
     align-content:center;
     align-items: center;
 }
 
-.container .widget .widget_header .widget_header_left .widget_header_text {
+.widget_header .header__left .header__text {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(31, 31,31);
     font-size: 1.125rem;
@@ -50,11 +48,19 @@ body {
     margin-left: 5px;
 }
 
-.container .widget .widget_header .widget_header_right {
+.widget__header .header__right {
     display: flex;
 }
 
-.container .widget .widget_header .widget_header_icon {
+.widget__header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+}
+
+.widget__header .header__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,45 +69,31 @@ body {
     margin-right: 5px;
 }
 
-.container .widget .widget_header .widget_header_icon_menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 19px;
-    height: 19px;
-}
-
-.container .widget .widget_header .widget_header_icon_menu:hover{
-    cursor: move;
-    background-color: rgb(215, 215, 215);
-}
-
-.container .widget .widget_header .widget_header_icon:hover{
+.widget__header .header__icon:hover{
     cursor: pointer;
     background-color: rgb(215, 215, 215);
 }
 
+.widget__header .menu:hover{
+    cursor: move;
+    background-color: rgb(215, 215, 215);
+}
 
-
-
-
-.container .widget .widget_table {
+.container .widget .widget__table {
     height: 470px;
     overflow: auto;
     margin-right: 12px;
     margin-left: 9px;
 }
 
-
-.container .widget .widget_table .widget_table_all {
+.container .widget .widget__table .table__all {
     display: table;
     border-collapse: collapse;
     width: 100%;
     padding: 0 0 0 7px;
 }
 
-
-.container .widget .widget_table .widget_table_all .widget_table_all_thead {
+.container .widget .widget__table .table__all .table__thead {
     background-color: rgb(230, 230, 230);
     font-size: 0.889rem;
     color: rgb(31, 31, 31);
@@ -109,52 +101,59 @@ body {
     border-bottom: 1px solid rgb(128, 128, 128);
 }
 
-.container .widget .widget_table svg{
+.container .widget .widget__table .table__all .table__thead span {
+    margin-right: 15px;
+}
+
+.container .widget .widget__table svg{
     width: 12px;
     height: 12px;
 }
 
-.container .widget .widget_table path {
+.container .widget .widget__table path {
     fill: rgb(128, 128, 128);
 }
 
-.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp {
+.table__thead .table__thead_name div {
+    display: inline-block;
+}
+
+.table__thead .table__thead_name div:hover{
+    cursor: pointer;
+}
+
+.table__thead .table__thead_name {
+    font-weight: 100;
+    text-align: left;
+}
+
+.table__thead .table__thead_name div {
+    display: inline-block;
+}
+
+.table__thead .table__thead_name div:hover{
+    cursor: pointer;
+}
+
+.table__thead .timespamp {
     font-weight: 400;
     width: 43%;
     text-align: left;
     padding-left: 5px;
 }
 
-.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp path {
+.widget__table .table__thead .timespamp path {
     fill: black;
 }
 
-.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp div {
-    display: inline-block;
-}
-
-.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title_timespamp div:hover{
-    cursor: pointer;
-}
-
-.container .widget .widget_table .widget_table_all .widget_table_all_thead span {
-    margin-right: 15px;
-}
-
-.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title {
-    font-weight: 100;
+.widget__table .table__tbody .table__tbody_list {
     text-align: left;
+    font-size: 0.889rem;
+    color: rgb(31, 31, 31);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title div {
-    display: inline-block;
-}
-
-.container .widget .widget_table .widget_table_all .widget_table_all_thead .widget_table_all_thead_title div:hover{
-    cursor: pointer;
-}
-
-.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_list_timespamp {
+.widget__table .table__tbody .event {
     width: 43%;
     text-align: left;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -162,14 +161,7 @@ body {
     font-weight: bold;
 }
 
-.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_list {
-    text-align: left;
-    font-size: 0.889rem;
-    color: rgb(31, 31, 31);
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.container .widget .widget_table .widget_table_all .widget_table_all_tbody .widget_table_all_tbody_sublist {
+.widget__table .table__tbody .keys {
     font-size: 0.889rem;
     font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
     color: rgb(0, 87, 168);
