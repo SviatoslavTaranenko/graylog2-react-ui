@@ -144,7 +144,7 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.table__tbody_list .table__tbody_list_event {
+.table__tbody_list_event {
     width: 43%;
     text-align: left;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -152,7 +152,7 @@ body {
     font-weight: bold;
 }
 
-.table__tbody_list .table__tbody_list_keys {
+.table__tbody_list_keys {
     font-size: 0.889rem;
     font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
     color: rgb(0, 87, 168);
