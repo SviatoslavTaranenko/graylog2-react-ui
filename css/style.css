@@ -152,7 +152,7 @@ body {
     font-weight: bold;
 }
 
-.table__tbody_list_keys {
+.widget__table .table__tbody .table__tbody_list_keys {
     font-size: 0.889rem;
     font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
     color: rgb(0, 87, 168);
