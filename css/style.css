@@ -127,13 +127,13 @@ body {
     text-align: left;
 }
 
-.table__thead_name .table__thead_name_timespamp div {
+.table__thead .table__thead_name_timespamp div {
     font-weight: 400;
     text-align: left;
     padding-left: 5px;
 }
 
-.table__thead .table__thead_name .table__thead_name_timespamp path {
+.container .widget .widget__table .table__thead .table__thead_name_timespamp path {
     fill: black;
 }
 
