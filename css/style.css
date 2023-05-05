@@ -158,3 +158,159 @@ body {
     color: rgb(0, 87, 168);
     border-bottom: 1px solid rgb(128, 128, 128);
 }
+
+.widget__table .table__tbody .table__tbody_row {
+    border-left: solid 5px rgb(0, 87, 168);
+}
+
+.widget__table .table__tbody .table__windows_object {
+    min-height: 400px;
+    margin-right: 5px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    min-height: 30px;
+    margin-left: 5px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_indification_code {
+    display: flex;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_indification_code .table__windows_indification_code_img {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_indification_code .table__windows_indification_code_img svg {
+    width: 19px;
+    height: 19px;
+}
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_indification_code .table__windows_indification_code_img path {
+    fill: black;
+    width: 19px;
+    height: 19px;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_indification_code .table__windows_indification_code_text {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(31, 31,31);
+    font-size: 1.2rem;
+    align-items: center;
+    margin-left: 5px;
+    justify-content: center;
+    font-weight: 500;
+
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_botton {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_botton svg {
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_botton path {
+    fill:rgb(76, 76, 76);
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_btn {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(100, 100, 100);
+    background-color: rgb(232, 232, 232);
+    border: solid 1px rgb(195, 195, 195);
+} 
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_btn:hover {
+    cursor: pointer;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_btn:active {
+    background-color: rgb(185, 185, 185);
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_btn_permalink {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_btn_stream {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_head .table__windows_btn_copyID {
+    border-radius: 3px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_sidebar {
+    width: 30%;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_title {
+    font-size: 0.889rem;
+    color: rgb(31, 31, 31);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_sidebar .table__windows_body_sidebar_data {
+    font-size: 0.889rem;
+    color: rgb(31, 31, 31);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_sidebar .table__windows_body_sidebar_received {
+    font-style: italic;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_sidebar .table__windows_body_sidebar_data a {
+    text-decoration: none;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_sidebar .table__windows_body_sidebar_data .table__windows_body_sidebar_link:before {
+    content: ""; 
+    display: inline-block; 
+    width: 5px; 
+    height: 5px; 
+    margin-right: 10px;
+    margin-left: 10px; 
+    border-radius: 50%; 
+    background-color: black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_information .table__windows_body_information_data {
+    font-size: 0.889rem;
+    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    color: rgb(128, 128, 128);
+    border-bottom: 1px solid rgb(128, 128, 128);
+    padding-bottom: 5px;
+}
+
+.widget__table .table__tbody .table__windows_object .table__windows_body .table__windows_body_information .table__windows_body_information_data:last-child {
+    border: none;
+}
